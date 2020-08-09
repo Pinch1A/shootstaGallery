@@ -5,7 +5,6 @@ import { VideoItem } from '../../components'
 import './GalleryList.scss'
 
 const GalleryList = ({ videoList, error }) => {
-  console.log('error', error)
   return (
     <>
       {error ? (
