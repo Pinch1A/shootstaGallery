@@ -1,0 +1,29 @@
+.dropzone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Icon {
+  opacity: 0.3;
+  height: 64px;
+  width: 64px;
+}
+
+.FileInput {
+  display: none;
+  font-size: 12px;
+}
+
+.Highlight {
+  background-color: rgb(188, 185, 236);
+}
+
+.drag-label {
+  font-size: 12px;
+  font-weight: 200;
+  color: #3a3a3a;
+  position: relative;
+  top: -170px;
+}

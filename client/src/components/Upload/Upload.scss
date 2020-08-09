@@ -1,0 +1,127 @@
+.Upload {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  align-items: flex-start;
+  text-align: left;
+  overflow: hidden;
+}
+.Item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.Files {
+  align-items: flex-start;
+  justify-items: flex-start;
+  flex: 1 1 100%;
+  overflow-y: auto;
+}
+
+.Filename {
+  margin-bottom: 8px;
+  font-size: 16px;
+  display: flex;
+  & div {
+    display: flex;
+  }
+  & .name {
+    color: rgb(119, 119, 119);
+    font-weight: 200;
+  }
+  & .error {
+    font-size: 14px;
+    color: rgb(199, 33, 33);
+    font-size: 12px;
+    letter-spacing: -1px;
+    align-self: flex-end;
+    margin-left: 10px;
+  }
+}
+
+.Row {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  // height: 50px;
+  padding: 8px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.Actions {
+  display: flex;
+  flex: 1 1 100%;
+  width: 100%;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-top: 32px;
+  padding: 0 10px;
+}
+
+.Title {
+  margin-bottom: 32px;
+  color: #555;
+}
+
+.CheckIcon {
+  opacity: 0.5;
+  margin-left: 32px;
+}
+
+.ProgressWrapper {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: row;
+  align-items: center;
+}
+
+button {
+  font-family: 'Roboto medium', sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  height: 36px;
+  min-width: 88px;
+  padding: 6px 16px;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0;
+  border-radius: 2px;
+  background: rgba(58, 183, 64, 1);
+
+  color: #fff;
+  outline: 0;
+
+  &:disabled {
+    background: rgb(189, 189, 189);
+    cursor: default;
+  }
+}
+
+@media (min-width: 768px) {
+  .Files {
+    margin-left: 32px;
+  }
+
+  .Content {
+    flex-direction: row;
+  }
+}

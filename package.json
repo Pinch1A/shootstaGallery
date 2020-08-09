@@ -1,0 +1,42 @@
+{
+  "name": "react-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node server/app.js",
+    "server": "nodemon server/app.js",
+    "client": "cd client && npm run start",
+    "build:client": "cd client && npm run build",
+    "install:all": "npm i && cd client && npm i",
+    "start:both": "npm run server & npm run client",
+    "test": "mocha 'server/test/*.js' --require @babel/polyfill --require @babel/register --recursive --exit"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Luca Mastrorilli",
+    "email": "mastrorilli.luca@gmail.com",
+    "url": "https://mastro.dev"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mime": "^2.4.6",
+    "mocha": "^8.1.1",
+    "multer": "^1.4.2",
+    "serve-index": "^1.9.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "nodemon": "^2.0.4"
+  }
+}

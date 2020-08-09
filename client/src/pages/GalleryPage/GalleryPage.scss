@@ -1,0 +1,38 @@
+.gallery {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  padding: 20px;
+  & a.btn span {
+    display: none;
+    vertical-align: sub;
+  }
+  & .header {
+    display: flex;
+    line-height: 1;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.title {
+  letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    padding: 50px;
+    & a.btn span {
+      vertical-align: sub;
+    }
+    & .header {
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .gallery {
+    width: 75%;
+    align-self: center;
+  }
+}

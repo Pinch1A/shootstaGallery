@@ -1,0 +1,5 @@
+export { default as CheckCircle } from './CheckCircle'
+export { default as CloudComputing } from './CloudComputing'
+export { default as NewFile } from './NewFile'
+export { default as Upload } from './Upload'
+export { default as Warning } from './Warning'

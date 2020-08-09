@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  background-color: rgb(206, 213, 223);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+.icons-ref {
+  font-size: 9px;
+  color: #ddd;
+}

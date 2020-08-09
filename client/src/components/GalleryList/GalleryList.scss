@@ -1,0 +1,17 @@
+.error-message,
+.empty-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.error-message {
+  color: red;
+}
+
+.gallery-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
